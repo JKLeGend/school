@@ -1,25 +1,358 @@
 body {
-	.img-container{
-		display: inline-block;
-		width: 14%;
+	margin: 0;
+	font-size: 20px !important;
+	color: #4D4E59 !important;
+	font-family:'SegoeWP47ef87b5167df' !important;
+
+	h2{
+		font-family: 'Amatica SC', cursive;
+		font-size: 52px;
+	}
+
+	header {
+		.header-container{
+			position: relative;
+			height: 80px;
+			border-bottom: 1px solid #cccccc;
+			box-shadow: .5px .5px .5px #cccccc;
+			background-color: #FCF9F4;
+			font-size: 18px !important;
+			.img-container {
+				display: inline-block;
+				width: 20%;
+				height: 100%;
+				img {
+					float: right;
+					width: 50%;
+					height: 90%;
+					margin: .5% 6%;
+				}
+			}
+
+			nav {
+				position: absolute;
+				display: inline-block;
+				width: 59%;
+				height: 100%;
+
+				border-left: 1px solid #cccccc;
+				border-right: 1px solid #cccccc;
+
+				font-family:'Helvetica-Neue-474c19cdb67df' !important;
+				text-align: center;
+				ul{
+					margin-top: 3%;
+					li {
+						display: inline;
+						margin: 0 25px;
+						a {
+							text-decoration: none;
+							color: #4D4E59;
+						}
+						a:hover{
+							color: #337ab7;
+						}
+					}
+				}
+			}
+			.button-container {
+				display: inline-block;
+				float: right;
+				width: 20%;
+				height: 100%;
+				button {
+					position: absolute;
+					width: 90px;
+					height: 30px;
+					margin: 1.5% 1%;
+					border: 1px solid #cccccc;
+					border-radius: 5px;
+					background-color: #ffffff;
+				}
+			}
+		}
+	}
+
+	section.hero-image{
+		position: relative;
+		height: 722px;
+		color: white;
 		img{
-			width: 15%;
+			width: 100%;
+		}
+
+		.mask{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			background-color: rgba(0,0,0,0.3);
+		}
+
+		.login-info{
+			position: absolute;
+			top: 32%;
+			left: 50%;
+			width: 1000px;
+			margin-left: -500px;
+
+			text-align: center;
+			font-family: 'Amatica SC', cursive;
+
+			h1{
+				font-size: 60px;
+			}
+
+			button{
+				margin:15px 15px 0;
+				width: 250px;
+				height: 50px;
+				margin: 30px 10px;
+				border: 1px solid white;
+				border-radius: 5px;
+				background-color: transparent;;
+				font-size: 24px;
+			}
+			button:hover{
+				background-color: rgba(255,255,255,0.3);
+			}
+		}
+		.next{
+			position: absolute;
+			top: 92%;
+			left: 50%;
+			width: 20px;
+			margin-left: -10px;
+			font-size: 32px;
+		}
+		.next{
+			cursor: pointer;
+		}
+	}
+	section.mission-module{
+		position: relative;
+		height: 600px;
+		text-align: center;
+		line-height: 35px;
+		.mission{
+			position: absolute;
+			top: 25%;
+			left: 50%;
+			width: 680px;
+			margin-left: -340px;
+			p{
+				margin-top: 25px;
+			}
+		}
+		.donate{
+			position: absolute;
+			top: 58%;
+			left: 50%;
+			width:300px;
+			height:50px;
+			margin-left: -150px;
+			border: 1px solid #FFCD62;
+			border-radius: 5px;
+			font-size: 18px;
+			background-color: #FFCD62;
+		}
+	}
+	section.student-module{
+		position: relative;
+		height: 600px;
+		background-color: #91D0B1;
+
+		.student-img{
+			display: inline-block;
+			width: 45%;
+
+			img{
+				float: right;
+				margin: 23% 10% 0 0;
+				width: 50%
+			}
+		}
+		.student-detail{
+			display: inline-block;
+			position: absolute;
+			top: 18%;
+			width: 54%;
+			margin-left: 25px;
+			color: white;
+			.student{
+				width: 70%;
+				.stu-sub{
+					display: inline-block;
+					width: 75%;
+					margin: 25px 45px 15px 0;
+				}
+				.carousel{
+					display: inline-block;
+					width: 10%;
+					.circle{
+						margin-top: 10px;
+						width: 20px;
+						height: 20px;
+						-moz-border-radius: 10px;
+						-webkit-border-radius: 10px;
+						border-radius: 10px;
+						background-color: #7CB69A;
+					}
+					.circle:hover{
+						cursor: pointer;
+						background-color: white;
+					}
+				}
+				button{
+					margin-top: 20px;
+					width:300px;
+					height:50px;
+					border: 1px solid #7CB69A;
+					border-radius: 5px;
+					background-color: #7CB69A;
+				}
+			}
+		}
+	}
+
+	section.pros-module{
+		position: relative;
+		height: 600px;
+		background-color: #FFCD62;
+		color: white;
+		.tutors-detail{
+			display: inline-block;
+			width: 54%;
+			padding: 10% 0 0 18%;
+			.tutors{
+				width: 90%;
+				.tutors-sub{
+					width: 90%;
+					margin: 25px 0 25px 0;
+				}
+				button{
+					width:300px;
+					height:50px;
+					border: 1px solid #EABC5B;
+					border-radius: 5px;
+					background-color: #EABC5B;
+				}
+			}
+
+		}
+		.pros-img{
+			display: inline-block;
+			position: absolute;
+			top: 25%;
+			width: 45%;
+
+			img{
+				margin: 0  10% 0 0;
+				width: 50%
+			}
+		}
+	}
+
+	section.partners-module{
+		position: relative;
+		height: 600px;
+		background-color: #80A8CC;
+
+		.partners-img{
+			display: inline-block;
+			width: 45%;
+
+			img{
+				float: right;
+				margin: 22% 10% 0 0;
+				width: 50%
+			}
+		}
+		.partners-detail{
+			display: inline-block;
+			position: absolute;
+			top: 22%;
+			width: 54%;
+			margin-left: 25px;
+			color: white;
+			.partners{
+				width: 70%;
+				.part-sub{
+					display: inline-block;
+					width: 80%;
+					margin: 25px 0 25px;
+				}
+				button{
+					width:300px;
+					height:50px;
+					border: 1px solid #6D91B1;
+					border-radius: 5px;
+					background-color: #6D91B1;
+				}
+			}
+		}
+	}
+
+	.progress-module{
+		position: relative;
+		height: 600px;
+		h2{
+			margin-top: 15%;
+			text-align: center;
+		}
+		.statics{
+			position: absolute;
+			top: 20%;
+			left: 50%;
+			width: 1000px;
+			height: 45%;
+			margin-left: -500px;
+			.item{
+				display: inline-block;
+				width: 30%;
+				border: 1px solid #cccccc;
+				margin: 0 10px;
+				height: 100%;
+
+				text-align: center;
+
+				.item-container{
+					margin: 20% 0;
+					.number{
+						font-family: 'Amatica SC', cursive;
+						font-size: 64px;
+						font-weight: bolder;
+					}
+					.name{
+						font-size: 16px;
+					}
+
+				}
+			}
+			.hours{
+				color: #C3E2CF;
+			}
+			.sessions{
+				color: #FFCD62;
+			}
+			.volunteer{
+				color: #80A8CC;
+			}
 
 		}
 	}
-	nav {
-		width: 70%;
-		display: inline-block;
-		li{
-			display: inline;
 
+	footer{
+		position: relative;
+		height: 80px;
+		background-color: #4D4E59;
+		color: white;
+
+		text-align: center;
+		font-size: 14px;
+		.footer{
+			padding-top: 2%;
 		}
+
 	}
-
-	.button-container{
-		display:inline-block;
-		width: 14%;
-	}
-
-
 }
