@@ -42,6 +42,7 @@ body {
 				text-align: center;
 				ul{
 					margin-top: 3%;
+					padding-left: 0 !important;
 					li {
 						display: inline;
 						margin: 0 25px;
@@ -75,10 +76,11 @@ body {
 
 	section.hero-image{
 		position: relative;
-		height: 722px;
+		height: 720px;
 		color: white;
 		img{
 			width: 100%;
+			height: 100%;
 		}
 
 		.mask{
@@ -177,7 +179,7 @@ body {
 			position: absolute;
 			top: 18%;
 			width: 54%;
-			margin-left: 25px;
+			padding-left: 25px;
 			color: white;
 			.student{
 				width: 70%;
@@ -273,7 +275,7 @@ body {
 			position: absolute;
 			top: 22%;
 			width: 54%;
-			margin-left: 25px;
+			padding-left: 25px;
 			color: white;
 			.partners{
 				width: 70%;
@@ -295,14 +297,14 @@ body {
 
 	.progress-module{
 		position: relative;
-		height: 600px;
+		height: 720px;
 		h2{
-			margin-top: 15%;
+			padding-top: 10%;
 			text-align: center;
 		}
 		.statics{
 			position: absolute;
-			top: 20%;
+			top: 36%;
 			left: 50%;
 			width: 1000px;
 			height: 45%;
@@ -312,7 +314,7 @@ body {
 				width: 30%;
 				border: 1px solid #cccccc;
 				margin: 0 10px;
-				height: 100%;
+				height: 85%;
 
 				text-align: center;
 
@@ -320,7 +322,7 @@ body {
 					margin: 20% 0;
 					.number{
 						font-family: 'Amatica SC', cursive;
-						font-size: 64px;
+						font-size: 72px;
 						font-weight: bolder;
 					}
 					.name{
